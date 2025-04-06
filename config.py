@@ -12,7 +12,8 @@ class Config(object):
     # database config
     DB_NAME = os.environ.get("DB_NAME","")     
     DB_URL  = os.environ.get("DB_URL","")
- 
+    PORT = os.environ.get("PORT", "8080")
+    
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "")
